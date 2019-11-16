@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>留下你的信息</title>
+	<link rel = "stylesheet" href = "css/style.css" />
 </head>
 <body>
-	<h1>留下你的信息</h1>
+	<h1><p style="color: blue;">留下你的信息</p></h1>
 	<div align="center">
 	<hr>
 	<form>
-		<p>姓名：<input type="text" name="userName"></p>
+		<p>姓名：<input type="text" name="userName">&nbsp;<input type="reset" value="重置" /></p>
 		<p>性别：男<input type="radio" value="boy" name="gender"/>&nbsp;
 			女<input type="radio" value="girl" name="gender"/></p>
 		<p>性格：<input type="checkbox" value="1" name="lovely/">可爱&nbsp;
@@ -20,10 +21,9 @@
 			<input type="checkbox" value="6" name="strong"/>坚强&nbsp;
 			<input type="checkbox" value="7" name="fragile"/>脆弱&nbsp;
 			<input type="checkbox" value="8" name="shy"/>害羞</p>
-			<textarea cols="50" rows="5">
+		<textarea cols="50" rows="5">
 填写更多性格
-		</textarea><br />
-		<br />
+		</textarea><p><input type="reset" name="重置" /></p>
 		生日：
 		<select>
   			<option>2019</option>
@@ -203,13 +203,11 @@
 		<br />
 		<textarea cols="50" rows="5">
 填写你的联系方式
-		</textarea><br>
-		<br />
+		</textarea><p><input type="reset" name="重置" /></p>
 		个人说明：<br />
 		<textarea cols="50" rows="10">
 介绍一下自己吧
-		</textarea><br />
-		<br />
+		</textarea><p><input type="reset" name="重置" /></p>
 		<input type="submit" value="提交" name="submitBtn"/>
 	</form>
 	</div>
